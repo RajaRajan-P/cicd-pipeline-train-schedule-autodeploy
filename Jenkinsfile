@@ -54,9 +54,9 @@ pipeline {
             }
         }
         stage('DeployToProduction') {
-            when {
+           /* when {
                 branch 'master'
-            }
+            } */
             environment { 
                 CANARY_REPLICAS = 0
             }
